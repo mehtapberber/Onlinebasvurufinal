@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ISBULMADBModelStoreContainer" CdmEntityContainer="ISBULMADBEntities">
+    <EntitySetMapping Name="tblKullanicilar">
+      <EntityTypeMapping TypeName="ISBULMADBModel.tblKullanicilar">
+        <MappingFragment StoreEntitySet="tblKullanicilar">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBasvurular">
+      <EntityTypeMapping TypeName="ISBULMADBModel.tblBasvurular">
+        <MappingFragment StoreEntitySet="tblBasvurular">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TCKimlikNo" ColumnName="TCKimlikNo" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="BabaAdi" ColumnName="BabaAdi" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="NufusKayitYer" ColumnName="NufusKayitYer" />
+          <ScalarProperty Name="Fotograf" ColumnName="Fotograf" />
+          <ScalarProperty Name="MenzuniyetOkul" ColumnName="MenzuniyetOkul" />
+          <ScalarProperty Name="MenzuniyetTarih" ColumnName="MenzuniyetTarih" />
+          <ScalarProperty Name="Bolum" ColumnName="Bolum" />
+          <ScalarProperty Name="TebligatAdres" ColumnName="TebligatAdres" />
+          <ScalarProperty Name="Ilce" ColumnName="Ilce" />
+          <ScalarProperty Name="Il" ColumnName="Il" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="SabitTel" ColumnName="SabitTel" />
+          <ScalarProperty Name="EpostaAdres" ColumnName="EpostaAdres" />
+          <ScalarProperty Name="PostaKodu" ColumnName="PostaKodu" />
+          <ScalarProperty Name="MevcutKurum" ColumnName="MevcutKurum" />
+          <ScalarProperty Name="MevcutGorev" ColumnName="MevcutGorev" />
+          <ScalarProperty Name="EskiKurum" ColumnName="EskiKurum" />
+          <ScalarProperty Name="EskiGorev" ColumnName="EskiGorev" />
+          <ScalarProperty Name="AyrilisNedeni" ColumnName="AyrilisNedeni" />
+          <ScalarProperty Name="AyrilisTarihi" ColumnName="AyrilisTarihi" />
+          <ScalarProperty Name="AskerlikDurum" ColumnName="AskerlikDurum" />
+          <ScalarProperty Name="AskerlikSekli" ColumnName="AskerlikSekli" />
+          <ScalarProperty Name="AskerlikYapmadi" ColumnName="AskerlikYapmadi" />
+          <ScalarProperty Name="MecburiHizmet" ColumnName="MecburiHizmet" />
+          <ScalarProperty Name="YukumluKurum" ColumnName="YukumluKurum" />
+          <ScalarProperty Name="HizmetSuresi" ColumnName="HizmetSuresi" />
+          <ScalarProperty Name="SicilKaydi" ColumnName="SicilKaydi" />
+          <ScalarProperty Name="SucSebebi" ColumnName="SucSebebi" />
+          <ScalarProperty Name="CezaSuresi" ColumnName="CezaSuresi" />
+          <ScalarProperty Name="YetkiliAd" ColumnName="YetkiliAd" />
+          <ScalarProperty Name="YetkiliSoyad" ColumnName="YetkiliSoyad" />
+          <ScalarProperty Name="YetkiliGorev" ColumnName="YetkiliGorev" />
+          <ScalarProperty Name="OnayTarih" ColumnName="OnayTarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

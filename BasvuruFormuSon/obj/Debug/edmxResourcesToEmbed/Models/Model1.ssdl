@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ISBULMADBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ISBULMADB.dbo.tblBasvurular' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblBasvurular">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TCKimlikNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="BabaAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="DogumTarihi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cinsiyet" Type="nvarchar" MaxLength="50" />
+    <Property Name="NufusKayitYer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fotograf" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenzuniyetOkul" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenzuniyetTarih" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bolum" Type="nvarchar" MaxLength="50" />
+    <Property Name="TebligatAdres" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ilce" Type="nvarchar" MaxLength="50" />
+    <Property Name="Il" Type="nvarchar" MaxLength="50" />
+    <Property Name="GSM" Type="nvarchar" MaxLength="50" />
+    <Property Name="SabitTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="EpostaAdres" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostaKodu" Type="nvarchar" MaxLength="50" />
+    <Property Name="MevcutKurum" Type="nvarchar" MaxLength="50" />
+    <Property Name="MevcutGorev" Type="nvarchar" MaxLength="50" />
+    <Property Name="EskiKurum" Type="nvarchar" MaxLength="50" />
+    <Property Name="EskiGorev" Type="nvarchar" MaxLength="50" />
+    <Property Name="AyrilisNedeni" Type="nvarchar" MaxLength="50" />
+    <Property Name="AyrilisTarihi" Type="nvarchar" MaxLength="50" />
+    <Property Name="AskerlikDurum" Type="nvarchar" MaxLength="50" />
+    <Property Name="AskerlikSekli" Type="nvarchar" MaxLength="50" />
+    <Property Name="AskerlikYapmadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="MecburiHizmet" Type="nvarchar" MaxLength="50" />
+    <Property Name="YukumluKurum" Type="nvarchar" MaxLength="50" />
+    <Property Name="HizmetSuresi" Type="nvarchar" MaxLength="50" />
+    <Property Name="SicilKaydi" Type="nvarchar" MaxLength="50" />
+    <Property Name="SucSebebi" Type="nvarchar" MaxLength="50" />
+    <Property Name="CezaSuresi" Type="nvarchar" MaxLength="50" />
+    <Property Name="YetkiliAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="YetkiliSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="YetkiliGorev" Type="nvarchar" MaxLength="50" />
+    <Property Name="OnayTarih" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblKullanicilar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Yetki" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ISBULMADBModelStoreContainer">
+    <EntitySet Name="tblKullanicilar" EntityType="Self.tblKullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBasvurular" EntityType="Self.tblBasvurular" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblBasvurular].[Id] AS [Id], 
+    [tblBasvurular].[TCKimlikNo] AS [TCKimlikNo], 
+    [tblBasvurular].[Adi] AS [Adi], 
+    [tblBasvurular].[Soyadi] AS [Soyadi], 
+    [tblBasvurular].[BabaAdi] AS [BabaAdi], 
+    [tblBasvurular].[DogumTarihi] AS [DogumTarihi], 
+    [tblBasvurular].[Cinsiyet] AS [Cinsiyet], 
+    [tblBasvurular].[NufusKayitYer] AS [NufusKayitYer], 
+    [tblBasvurular].[Fotograf] AS [Fotograf], 
+    [tblBasvurular].[MenzuniyetOkul] AS [MenzuniyetOkul], 
+    [tblBasvurular].[MenzuniyetTarih] AS [MenzuniyetTarih], 
+    [tblBasvurular].[Bolum] AS [Bolum], 
+    [tblBasvurular].[TebligatAdres] AS [TebligatAdres], 
+    [tblBasvurular].[Ilce] AS [Ilce], 
+    [tblBasvurular].[Il] AS [Il], 
+    [tblBasvurular].[GSM] AS [GSM], 
+    [tblBasvurular].[SabitTel] AS [SabitTel], 
+    [tblBasvurular].[EpostaAdres] AS [EpostaAdres], 
+    [tblBasvurular].[PostaKodu] AS [PostaKodu], 
+    [tblBasvurular].[MevcutKurum] AS [MevcutKurum], 
+    [tblBasvurular].[MevcutGorev] AS [MevcutGorev], 
+    [tblBasvurular].[EskiKurum] AS [EskiKurum], 
+    [tblBasvurular].[EskiGorev] AS [EskiGorev], 
+    [tblBasvurular].[AyrilisNedeni] AS [AyrilisNedeni], 
+    [tblBasvurular].[AyrilisTarihi] AS [AyrilisTarihi], 
+    [tblBasvurular].[AskerlikDurum] AS [AskerlikDurum], 
+    [tblBasvurular].[AskerlikSekli] AS [AskerlikSekli], 
+    [tblBasvurular].[AskerlikYapmadi] AS [AskerlikYapmadi], 
+    [tblBasvurular].[MecburiHizmet] AS [MecburiHizmet], 
+    [tblBasvurular].[YukumluKurum] AS [YukumluKurum], 
+    [tblBasvurular].[HizmetSuresi] AS [HizmetSuresi], 
+    [tblBasvurular].[SicilKaydi] AS [SicilKaydi], 
+    [tblBasvurular].[SucSebebi] AS [SucSebebi], 
+    [tblBasvurular].[CezaSuresi] AS [CezaSuresi], 
+    [tblBasvurular].[YetkiliAd] AS [YetkiliAd], 
+    [tblBasvurular].[YetkiliSoyad] AS [YetkiliSoyad], 
+    [tblBasvurular].[YetkiliGorev] AS [YetkiliGorev], 
+    [tblBasvurular].[OnayTarih] AS [OnayTarih]
+    FROM [dbo].[tblBasvurular] AS [tblBasvurular]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
